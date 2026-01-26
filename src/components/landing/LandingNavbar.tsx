@@ -11,7 +11,7 @@ function LandingNavbar() {
     <nav className="bg-background px-5 py-6 ">
       <div className="flex justify-between">
         <div className="flex justify-between w-full">
-          <div className="flex justify-between gap-8">
+          <div className="flex justify-between items-center gap-8">
             <Link to="/" className="flex items-center gap-1">
               <img
                 className="w-5 h-5"
@@ -21,14 +21,14 @@ function LandingNavbar() {
               <p className="text-h3">chatspace</p>
             </Link>
 
-            <div className="sm: hidden lg:flex lg:gap-4">
+            <div className="sm: hidden lg:flex lg:items-center lg:gap-4">
               <a href="#features">Features</a>
               <a href="#how-it-works">How It Works</a>
               <a href="#faq">FAQ</a>
             </div>
           </div>
           {/* desktop buttons */}
-          <div className="sm: hidden lg:flex lg:gap-4">
+          <div className="sm: hidden lg:flex lg:items-center lg:gap-4">
             <Link to="">Sign Up</Link>
             <Link to="">Login</Link>
           </div>
