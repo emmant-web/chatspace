@@ -107,10 +107,18 @@
 
 @layer components{
   .btn-rectangle-filled{
-    @apply flex justify-center bg-primary rounded-full px-2 py-3
+    @apply flex justify-center bg-secondary rounded-lg px-4 py-2
   }
 
   .btn-rectangle-outlined{
+    @apply flex justify-center border border-secondary rounded-lg px-4 py-2
+  }
+
+   .btn-rounded-filled{
+    @apply flex justify-center bg-secondary rounded-full px-2 py-3
+  }
+
+  .btn-rounded-outlined{
     @apply flex justify-center border border-secondary rounded-full px-2 py-3
   }
   

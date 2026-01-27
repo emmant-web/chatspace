@@ -41,10 +41,30 @@ function Hero() {
         </div>
       </div>
 
-      {/* layout for desktop */}
-      <div className="hidden lg:block">
-        <MacbookScroll src="https://images.unsplash.com/photo-1631888718423-082c9f5b0206?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-      </div>
+    {/* Layout for desktop */}
+<div className="hidden lg:block w-full overflow-hidden">
+  <div className="flex flex-col items-center gap-6 mt-16">
+
+    <h1 className="text-h1 lg:text-5xl xl:text-5xl max-w-2xl font-bold leading-tight">
+      Chat in Real-Time, Connect Instantly
+    </h1>
+    <p className="text-body md:text-lg lg:text-lg xl:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
+      Join rooms, create conversations, stay connected
+    </p>
+    <div className="flex gap-4 mt-4">
+      <button className="text-button btn-rectangle-filled cursor-pointer px-8 py-3 text-base lg:text-lg transition-transform hover:scale-105">
+        Get Started
+      </button>
+      <button className="text-button btn-rectangle-outlined cursor-pointer px-8 py-3 text-base lg:text-lg transition-transform hover:scale-105">
+        View Demo
+      </button>
+    </div>
+  </div>
+  <MacbookScroll
+    src="https://images.unsplash.com/photo-1631888718423-082c9f5b0206?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    showGradient={true}
+  />
+</div>
     </section>
   );
 }
