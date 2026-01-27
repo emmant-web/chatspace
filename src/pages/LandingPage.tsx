@@ -2,7 +2,9 @@ import LandingNavbar from "@/components/landing/LandingNavbar";
 import Hero from "@/components/landing/Hero";
 import Features from "@/components/landing/features/Features";
 import CTA from "@/components/landing/CTA";
-// import LandingFooter from "@/components/landing/LandingFooter";
+import LandingFooter from "@/components/landing/LandingFooter";
+import FAQ from "@/components/landing/FAQ";
+// import About from "@/components/landing/About"
 
 
 
@@ -14,10 +16,11 @@ function LandingPage(){
         <div>
             <LandingNavbar />
             <Hero />
+            {/* <About /> */}
             <Features />
+            <FAQ />
             <CTA />
-            {/* <LandingFooter /> */}
-        
+            <LandingFooter />
         </div>
     )
 

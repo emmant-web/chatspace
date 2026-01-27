@@ -56,7 +56,7 @@ function Hero() {
         Get Started
       </button>
       <button className="text-button btn-rectangle-outlined cursor-pointer px-8 py-3 text-base lg:text-lg transition-transform hover:scale-105">
-        View Demo
+        How It Works
       </button>
     </div>
   </div>

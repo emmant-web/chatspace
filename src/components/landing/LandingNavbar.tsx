@@ -33,7 +33,7 @@ function LandingNavbar() {
                 href="#how-it-works" 
                 className="text-body text-muted-foreground hover:text-foreground transition-colors"
               >
-                How It Works
+                About
               </a>
               <a 
                 href="#faq" 
@@ -62,7 +62,7 @@ function LandingNavbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden bg-primary rounded-lg p-2 hover:opacity-90 transition-opacity"
+            className="lg:hidden bg-secondary rounded-lg p-2 hover:opacity-90 transition-opacity"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
