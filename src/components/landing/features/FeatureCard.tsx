@@ -18,29 +18,35 @@ function FeatureCard({
   altdesc,
 }: FeatureCardProps) {
   return (
-    <div className="border border-border shadow-sm rounded-lg m-2 overflow-hidden hover:shadow-md w-xs md:w-sm lg:w-lg lg:h-auto mx-auto">
-      {/* content div */}
-      <div className="p-4 h-64 bg-muted">
-
-        <div className="flex justify-start items-center gap-3 p-2 border border-border rounded-sm mb-3 w-50 bg-background">
-          <Icon className="w-5 h-5 text-foreground" />
-          <span className="text-sm text-foreground dark:text-gray-400 font-medium">
+    <div className="border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-card w-full h-full flex flex-col">
+      {/* Content Section */}
+      <div className="p-6 space-y-4 flex-grow">
+        {/* Label with Icon */}
+        <div className="inline-flex items-center gap-2 px-3 py-2 border border-border rounded-lg bg-background w-fit">
+          <Icon className="w-4 h-4 text-foreground" />
+          <span className="text-sm text-foreground font-medium">
             {label}
           </span>
         </div>
 
-        <div>
-          <h3 className="text-2xl font-bold text-foreground dark:text-foreground mb-3">
-            {title}
-          </h3>
-          <p className="">{description}</p>
-        </div>
+        {/* Title */}
+        <h3 className="text-2xl font-bold text-foreground leading-tight">
+          {title}
+        </h3>
 
+        {/* Description */}
+        <p className="text-muted-foreground text-body leading-relaxed">
+          {description}
+        </p>
       </div>
 
-      {/* image div */}
-      <div className="h-48">
-        <img className="w-full h-full object-cover" src={image} alt={altdesc} />
+      {/* Image Section */}
+      <div className="relative h-64 bg-muted/30 overflow-hidden flex-shrink-0">
+        <img 
+          className="w-full h-full object-cover" 
+          src={image} 
+          alt={altdesc} 
+        />
       </div>
     </div>
   );
