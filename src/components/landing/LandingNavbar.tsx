@@ -12,7 +12,7 @@ function LandingNavbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Desktop Nav Links */}
           <div className="flex items-center gap-12">
-            <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <Link to="/" className="flex items-center content-center gap-2 hover:opacity-80 transition-opacity">
               <img
                 className="w-6 h-6"
                 src={PlaceholderLogo}
