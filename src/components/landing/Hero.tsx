@@ -1,5 +1,7 @@
-import { MacbookScroll } from "../ui/macbook-scroll";
+// import { MacbookScroll } from "../ui/macbook-scroll";
+import { StaticMacbook } from "../ui/StaticMacbook";
 import PlaceholderLogo from "../../assets/images/icons/placeholder-logo.svg";
+
 
 function Hero() {
   return (
@@ -43,7 +45,7 @@ function Hero() {
 
     {/* Layout for desktop */}
 <div className="hidden lg:block w-full overflow-hidden">
-  <div className="flex flex-col items-center gap-6 mt-16">
+  <div className="flex flex-col items-center gap-6 my-16">
 
     <h1 className="text-h1 lg:text-5xl xl:text-5xl max-w-2xl font-bold leading-tight">
       Chat in Real-Time, Connect Instantly
@@ -60,10 +62,14 @@ function Hero() {
       </button>
     </div>
   </div>
-  <MacbookScroll
+  <StaticMacbook
     src="https://images.unsplash.com/photo-1631888718423-082c9f5b0206?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     showGradient={true}
   />
+  {/* <MacbookScroll
+    src="https://images.unsplash.com/photo-1631888718423-082c9f5b0206?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    showGradient={true}
+  /> */}
 </div>
     </section>
   );
