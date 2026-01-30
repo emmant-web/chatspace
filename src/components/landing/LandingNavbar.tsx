@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import { X, Menu } from "lucide-react";
-import PlaceholderLogo from "../../assets/images/icons/placeholder-logo.svg";
+// import PlaceholderLogo from "../../assets/images/icons/placeholder-logo.svg";
+import Logo from "../../assets/images/logo-v1.png"
 
 function LandingNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,8 +15,8 @@ function LandingNavbar() {
           <div className="flex items-center gap-12">
             <Link to="/" className="flex items-center content-center gap-2 hover:opacity-80 transition-opacity">
               <img
-                className="w-6 h-6"
-                src={PlaceholderLogo}
+                className="w-8 h-8"
+                src={Logo}
                 alt="chatspace logo"
               />
               <span className="text-h3 text-foreground">chatspace</span>
@@ -30,7 +31,7 @@ function LandingNavbar() {
                 Features
               </a>
               <a 
-                href="#how-it-works" 
+                href="#about" 
                 className="text-body text-muted-foreground hover:text-foreground transition-colors"
               >
                 About
@@ -95,11 +96,11 @@ function LandingNavbar() {
               Features
             </a>
             <a 
-              href="#how-it-works" 
+              href="#about" 
               className="block px-3 py-2 text-body text-foreground hover:bg-muted rounded-lg transition-colors"
             
             >
-              How It Works
+              About
             </a>
             <a 
               href="#faq" 

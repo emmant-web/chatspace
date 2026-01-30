@@ -8,9 +8,6 @@ import About from "@/components/landing/About"
 
 
 
-
-
-
 function LandingPage(){
     return (
         <div>
@@ -21,6 +18,7 @@ function LandingPage(){
             <FAQ />
             <CTA />
             <LandingFooter />
+
         </div>
     )
 
