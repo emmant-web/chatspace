@@ -2,7 +2,7 @@
 // import PlaceholderLogo from "../../assets/images/icons/placeholder-logo.svg";
 import { StaticMacbook } from "../ui/StaticMacbook";
 import { Link } from "react-router";
-import Logo from "../../assets/images/logo-v1.png";
+import Logo from "../../assets/images/logo-v1.svg";
 
 function Hero() {
   return (
@@ -37,7 +37,10 @@ function Hero() {
           >
             Get Started
           </Link>
-          <a href="#features"className="text-button btn-rectangle-outlined cursor: pointer">
+          <a
+            href="#features"
+            className="text-button btn-rectangle-outlined cursor: pointer"
+          >
             View Features
           </a>
         </div>
@@ -53,12 +56,18 @@ function Hero() {
             Join rooms, create conversations, stay connected
           </p>
           <div className="flex gap-4 mt-4">
-            <button className="text-button btn-rectangle-filled cursor-pointer px-8 py-3 text-base lg:text-lg transition-transform hover:scale-105">
+            <Link
+              className="text-button btn-rectangle-filled cursor-pointer px-8 py-3 text-base lg:text-lg transition-transform hover:scale-105"
+              to="/signup"
+            >
               Get Started
-            </button>
-            <a href="#features" className="text-button btn-rectangle-outlined cursor-pointer px-8 py-3 text-base lg:text-lg transition-transform hover:scale-105">
-            View Features
-          </a>
+            </Link>
+            <a
+              href="#features"
+              className="text-button btn-rectangle-outlined cursor-pointer px-8 py-3 text-base lg:text-lg transition-transform hover:scale-105"
+            >
+              View Features
+            </a>
           </div>
         </div>
         <StaticMacbook
