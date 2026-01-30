@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { X, Menu } from "lucide-react";
 // import PlaceholderLogo from "../../assets/images/icons/placeholder-logo.svg";
-import Logo from "../../assets/images/logo-v1.png"
+import Logo from "../../assets/images/logo-v1.svg"
 
 function LandingNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
