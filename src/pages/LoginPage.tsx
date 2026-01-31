@@ -1,9 +1,5 @@
-import Auth from "../components/auth/Auth";
+import Auth, { AuthType } from "../components/auth/Auth";
 
-enum AuthType {
-  Login = "login",
-  SignUp = "signup",
-}
 
 function LoginPage() {
   return <Auth initialAuthType={AuthType.Login} />;
