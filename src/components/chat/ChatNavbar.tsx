@@ -41,12 +41,20 @@ function ChatNavbar() {
                 to="/dashboard"
                 className="text-body text-foreground hover:text-primary hover:bg-muted px-4 py-2 rounded-lg transition-colors"
               >
-                Chat Room
+                Dashboard
+              </Link>
+            </li>
+             <li>
+              <Link
+                to="/chat/general"
+                className="text-body text-foreground hover:text-primary hover:bg-muted px-4 py-2 rounded-lg transition-colors"
+              >
+                General Chat
               </Link>
             </li>
             <li>
               <Link
-                to="/rooms"
+                to="/chat/rooms"
                 className="text-body text-foreground hover:text-primary hover:bg-muted px-4 py-2 rounded-lg transition-colors"
               >
                 Available Rooms
@@ -54,7 +62,7 @@ function ChatNavbar() {
             </li>
             <li>
               <Link
-                to="/create-room"
+                to="/chat/create"
                 className="text-body text-foreground hover:text-primary hover:bg-muted px-4 py-2 rounded-lg transition-colors"
               >
                 Create Room
@@ -121,7 +129,16 @@ function ChatNavbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-body text-foreground hover:text-primary hover:bg-muted px-4 py-3 rounded-lg transition-colors"
               >
-                Chat Room
+                Dashboard
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/chat/general"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-body text-foreground hover:text-primary hover:bg-muted px-4 py-3 rounded-lg transition-colors"
+              >
+                General Chat
               </Link>
             </li>
             <li>
