@@ -5,6 +5,9 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import Dashboard from "./pages/Dashboard";
 import ChatAppLayout from "./pages/ChatAppLayout";
+import ChatRoom from "./pages/ChatRoom";
+import RoomList from "./pages/RoomList";
+import CreateRoom from "./pages/CreateRoom";
 import { supabase } from "./supabaseClient";
 import { useChatStore } from "./store/chatStore";
 
@@ -73,6 +76,9 @@ function App() {
         element={user ? <ChatAppLayout /> : <Navigate to="/login" />}
       >
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/chat/general" element={<ChatRoom />} />
+        <Route path="/chat/rooms" element={<RoomList />} />
+        <Route path="/chat/create" element={<CreateRoom />} />
         
       </Route>
     </Routes>
