@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
-
 @theme {
-  --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
-
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -20,8 +18,7 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
-  
-  
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -44,58 +41,56 @@
 
 :root {
   --radius: 0.625rem;
-  
- 
-  --background: oklch(1 0 0);                    /* White */
-  --foreground: oklch(0.15 0 0);                 /* Almost black */
-  --card: oklch(0.99 0 0);                       /* Off-white */
+
+  --background: oklch(1 0 0); /* White */
+  --foreground: oklch(0.15 0 0); /* Almost black */
+  --card: oklch(0.99 0 0); /* Off-white */
   --card-foreground: oklch(0.15 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.15 0 0);
-  
-  --primary: oklch(0.609 0.126 221.723);         /* Teal #0891B2 */
-  --primary-foreground: oklch(1 0 0);            /* White text */
-  
-  --secondary: oklch(0.715 0.143 215.221);       /* Cyan #06B6D4 */
+
+  --primary: oklch(0.609 0.126 221.723); /* Teal #0891B2 */
+  --primary-foreground: oklch(1 0 0); /* White text */
+
+  --secondary: oklch(0.715 0.143 215.221); /* Cyan #06B6D4 */
   --secondary-foreground: oklch(1 0 0);
-  
-  --muted: oklch(0.974 0.001 247.839);           /* Light gray surface */
+
+  --muted: oklch(0.974 0.001 247.839); /* Light gray surface */
   --muted-foreground: oklch(0.556 0.015 256.802); /* Muted text */
-  
-  --accent: oklch(0.52 0.105 223.128);           /* Dark teal accent */
+
+  --accent: oklch(0.52 0.105 223.128); /* Dark teal accent */
   --accent-foreground: oklch(1 0 0);
-  
-  --destructive: oklch(0.577 0.245 27.325);      /* Red */
-  --border: oklch(0.922 0.004 264.531);          /* Light border */
+
+  --destructive: oklch(0.577 0.245 27.325); /* Red */
+  --border: oklch(0.922 0.004 264.531); /* Light border */
   --input: oklch(0.922 0.004 264.531);
-  --ring: oklch(0.609 0.126 221.723);            /* Teal ring */
+  --ring: oklch(0.609 0.126 221.723); /* Teal ring */
 }
 
 .dark {
-  
-  --background: oklch(0.15 0 0);                 /* Dark slate #0F172A */
-  --foreground: oklch(0.95 0 0);                 /* Light text */
-  --card: oklch(0.205 0 0);                      /* Dark surface #1E293B */
+  --background: oklch(0.15 0 0); /* Dark slate #0F172A */
+  --foreground: oklch(0.95 0 0); /* Light text */
+  --card: oklch(0.205 0 0); /* Dark surface #1E293B */
   --card-foreground: oklch(0.95 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.95 0 0);
-  
-  --primary: oklch(0.715 0.143 215.221);         /* Brighter Cyan #06B6D4 */
-  --primary-foreground: oklch(0.15 0 0);         /* Dark text on cyan */
-  
-  --secondary: oklch(0.609 0.126 221.723);       /* Teal #0891B2 */
+
+  --primary: oklch(0.715 0.143 215.221); /* Brighter Cyan #06B6D4 */
+  --primary-foreground: oklch(0.15 0 0); /* Dark text on cyan */
+
+  --secondary: oklch(0.609 0.126 221.723); /* Teal #0891B2 */
   --secondary-foreground: oklch(0.95 0 0);
-  
-  --muted: oklch(0.269 0 0);                     /* Dark muted bg */
+
+  --muted: oklch(0.269 0 0); /* Dark muted bg */
   --muted-foreground: oklch(0.656 0.022 252.894); /* Muted text */
-  
-  --accent: oklch(0.789 0.154 211.53);           /* Bright cyan accent #22D3EE */
+
+  --accent: oklch(0.789 0.154 211.53); /* Bright cyan accent #22D3EE */
   --accent-foreground: oklch(0.15 0 0);
-  
-  --destructive: oklch(0.704 0.191 22.216);      /* Red */
-  --border: oklch(0.334 0 0);                    /* Dark border #334155 */
+
+  --destructive: oklch(0.704 0.191 22.216); /* Red */
+  --border: oklch(0.334 0 0); /* Dark border #334155 */
   --input: oklch(0.334 0 0);
-  --ring: oklch(0.715 0.143 215.221);            /* Cyan */
+  --ring: oklch(0.715 0.143 215.221); /* Cyan */
 }
 
 @layer base {
@@ -104,57 +99,52 @@
   }
 }
 
-
-@layer components{
-  .btn-rectangle-filled{
-    @apply flex justify-center bg-secondary rounded-lg px-4 py-2
+@layer components {
+  .btn-rectangle-filled {
+    @apply flex justify-center bg-secondary rounded-lg px-4 py-2;
   }
 
-  .btn-rectangle-outlined{
-    @apply flex justify-center border border-secondary rounded-lg px-4 py-2
+  .btn-rectangle-outlined {
+    @apply flex justify-center border border-secondary rounded-lg px-4 py-2;
   }
 
-   .btn-rounded-filled{
-    @apply flex justify-center bg-secondary rounded-full px-2 py-3
+  .btn-rounded-filled {
+    @apply flex justify-center bg-secondary rounded-full px-2 py-3;
   }
 
-  .btn-rounded-outlined{
-    @apply flex justify-center border border-secondary rounded-full px-2 py-3
+  .btn-rounded-outlined {
+    @apply flex justify-center border border-secondary rounded-full px-2 py-3;
   }
-  
-
 
   .text-h1 {
     @apply font-heading text-5xl md:text-6xl font-bold;
   }
-  
+
   .text-h2 {
     @apply font-heading text-4xl md:text-5xl font-semibold;
   }
-  
+
   .text-h3 {
     @apply font-heading text-2xl md:text-3xl font-semibold;
   }
-  
 
- 
   .text-body {
     @apply font-body text-base;
   }
-  
+
   .text-body-lg {
     @apply font-body text-lg;
   }
-  
+
   .text-small {
     @apply font-body text-sm;
   }
 
-  
- 
+  .text-error {
+    @apply font-body text-base text-destructive;
+  }
+
   .text-button {
     @apply font-body text-base font-semibold px-2 py-3;
   }
 }
-
-

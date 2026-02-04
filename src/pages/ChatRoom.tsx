@@ -1,6 +1,8 @@
 function ChatRoom(){
     return(
-        <div></div>
+        <div>
+            this is the chatroom page
+        </div>
     )
 }
 

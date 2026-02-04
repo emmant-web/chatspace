@@ -1,7 +1,8 @@
 import { create } from 'zustand';
 
 interface User {
-    id: string;
+    // the id here is a string because supabase ids are strings
+    id: string; 
     email: string;
 }
 
