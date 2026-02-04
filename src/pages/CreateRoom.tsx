@@ -1,6 +1,8 @@
 function CreateRoom(){
     return(
-        <div></div>
+        <div>
+            this is the create room page
+        </div>
     )
 }
 

@@ -77,6 +77,7 @@ function App() {
       >
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/chat/general" element={<ChatRoom />} />
+        <Route path="/chat/rooms/:roomId" element={<ChatRoom />} />
         <Route path="/chat/rooms" element={<RoomList />} />
         <Route path="/chat/create" element={<CreateRoom />} />
         
