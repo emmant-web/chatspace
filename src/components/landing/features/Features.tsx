@@ -1,5 +1,8 @@
 import FeatureCard from "./FeatureCard";
 import { MessageCircle, Compass, Sparkles } from 'lucide-react';
+import GeneralChat from "../../../assets/images/zoomed-general-chat.png"
+import BrowseRooms from "../../../assets/images/zoomed-browse-rooms.png"
+import CreateNewRoom from "../../../assets/images/zoomed-create-new-room.png"
 
 const features = [
   {
@@ -7,7 +10,7 @@ const features = [
     label: "Instant Connection",
     title: "Join General Chat",
     description: "Jump right into conversations with our active community. No barriers, no waiting—start chatting immediately with people from around the world in our welcoming general chat room.",
-    image: "https://placehold.co/600x400",
+    image: GeneralChat,
     altdesc: "Active chat conversation interface",
   },
   {
@@ -15,7 +18,7 @@ const features = [
     label: "Discover Communities",
     title: "Browse Rooms",
     description: "Explore diverse chat rooms tailored to your interests. Whether you're into gaming, tech, art, or casual hangouts—find your perfect community and connect with like-minded people.",
-    image: "https://placehold.co/600x400",
+    image: BrowseRooms,
     altdesc: "Grid of various chat rooms",
   },
   {
@@ -23,7 +26,7 @@ const features = [
     label: "Build Your Space",
     title: "Create Your Own",
     description: "Turn your vision into reality by creating a custom chat room. Set your own rules, invite friends, and cultivate a unique space where your community can thrive and grow together.",
-    image: "https://placehold.co/600x400",
+    image: CreateNewRoom,
     altdesc: "Chat room creation interface",
   },
 ];
