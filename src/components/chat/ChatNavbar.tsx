@@ -143,7 +143,7 @@ function ChatNavbar() {
             </li>
             <li>
               <Link
-                to="/rooms"
+                to="/chat/rooms"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-body text-foreground hover:text-primary hover:bg-muted px-4 py-3 rounded-lg transition-colors"
               >
@@ -152,7 +152,7 @@ function ChatNavbar() {
             </li>
             <li>
               <Link
-                to="/create-room"
+                to="/chat/create"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-body text-foreground hover:text-primary hover:bg-muted px-4 py-3 rounded-lg transition-colors"
               >

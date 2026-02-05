@@ -3,6 +3,7 @@
 import { StaticMacbook } from "../ui/StaticMacbook";
 import { Link } from "react-router";
 import Logo from "../../assets/images/logo-v1.svg";
+import PictureInMacBook from "../../assets/images/picture-inside-macbook.png"
 
 function Hero() {
   return (
@@ -71,7 +72,7 @@ function Hero() {
           </div>
         </div>
         <StaticMacbook
-          src="https://images.unsplash.com/photo-1631888718423-082c9f5b0206?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={PictureInMacBook}
           showGradient={true}
         />
         {/* <MacbookScroll
