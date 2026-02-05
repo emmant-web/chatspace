@@ -2,7 +2,6 @@ import { useNavigate } from "react-router";
 import { useChatStore } from "../store/chatStore";
 import { Hash, Compass, PlusCircle, ArrowRight } from "lucide-react";
 
-
 const cards = [
   {
     id: "general",
@@ -30,7 +29,6 @@ const cards = [
   },
 ];
 
-
 function Dashboard() {
   const user = useChatStore((state) => state.user);
   const navigate = useNavigate();
@@ -41,17 +39,17 @@ function Dashboard() {
     hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
 
   return (
-    <div className="flex justify-center items-center h-">
-      <div className="max-w-3xl mx-auto px-4 py-10 flex flex-col gap-8">
+    <div className="flex justify-center items-center min-h-[calc(100vh-4rem)] px-4">
+      <div className="w-full max-w-6xl py-10 flex flex-col gap-10">
    
         {/* Greeting Section */}
       
-        <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-6 sm:p-8">
+        <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-8 md:p-12">
           {/* Decorative blobs – purely visual, pointer-events-none so they
             don't interfere with anything */}
           <div
             aria-hidden="true"
-            className="absolute -top-16 -right-16 w-56 h-56 rounded-full opacity-[0.08] pointer-events-none"
+            className="absolute -top-20 -right-20 w-72 h-72 rounded-full opacity-[0.08] pointer-events-none"
             style={{
               background:
                 "radial-gradient(circle, var(--color-primary), transparent 70%)",
@@ -59,7 +57,7 @@ function Dashboard() {
           />
           <div
             aria-hidden="true"
-            className="absolute -bottom-12 -left-12 w-40 h-40 rounded-full opacity-[0.08] pointer-events-none"
+            className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full opacity-[0.08] pointer-events-none"
             style={{
               background:
                 "radial-gradient(circle, var(--color-secondary), transparent 70%)",
@@ -68,35 +66,35 @@ function Dashboard() {
 
           {/* Text content – relative so it sits above the blobs */}
           <div className="relative z-10">
-            <p className="text-small text-muted-foreground">{greeting},</p>
-            <h1 className="text-h3 text-foreground mt-1">
+            <p className="text-body text-muted-foreground">{greeting},</p>
+            <h1 className="text-h2 text-foreground mt-2">
               Welcome back,{" "}
-              <span style={{ color: "var(--color-primary)" }}>
+              <span style={{ color: "var(--color-primary)" }}
+               className="break-all">
                 {user?.email ?? "User"}
               </span>
             </h1>
-            <p className="text-body text-muted-foreground mt-2">
+            <p className="text-body-lg text-muted-foreground mt-3">
               Pick a room below to get started, or create your own.
             </p>
           </div>
         </div>
 
-
         {/* Card Grid */}
         
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((card) => (
             <button
               key={card.id}
               onClick={() => navigate(card.to)}
               className="group relative text-left w-full rounded-xl border border-border bg-card
-                       p-5 flex flex-col gap-3 transition-all duration-200 cursor-pointer
+                       p-6 md:p-7 flex flex-col gap-4 transition-all duration-200 cursor-pointer
                        hover:border-ring hover:shadow-lg hover:shadow-ring/10
                        focus:outline-none focus:ring-2 focus:ring-ring"
             >
               {/* Icon row */}
               <div
-                className="w-11 h-11 rounded-lg flex items-center justify-center transition-colors duration-200"
+                className="w-14 h-14 rounded-lg flex items-center justify-center transition-colors duration-200"
                 style={{
                   background: "var(--color-muted)",
                   color: "var(--color-primary)",
@@ -106,23 +104,23 @@ function Dashboard() {
               </div>
 
               {/* Title + description */}
-              <div className="flex flex-col gap-1 flex-1">
+              <div className="flex flex-col gap-2 flex-1">
                 <h2 className="text-body-lg font-semibold text-card-foreground">
                   {card.title}
                 </h2>
-                <p className="text-small text-muted-foreground leading-relaxed">
+                <p className="text-body text-muted-foreground leading-relaxed">
                   {card.description}
                 </p>
               </div>
 
               {/* Arrow – slides right on hover */}
               <div
-                className="flex items-center gap-1 text-small font-semibold transition-colors duration-200"
+                className="flex items-center gap-1 text-body font-semibold transition-colors duration-200"
                 style={{ color: "var(--color-primary)" }}
               >
                 <span>Go</span>
                 <ArrowRight
-                  size={16}
+                  size={18}
                   className="transition-transform duration-200 group-hover:translate-x-1"
                 />
               </div>
