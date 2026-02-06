@@ -100,6 +100,12 @@ export const Lid = ({ src }: { src?: string }) => {
               src={src as string}
               alt="macbook screen"
               className="h-full w-full object-cover object-center"
+                style={{ 
+                imageRendering: '-webkit-optimize-contrast',
+                backfaceVisibility: 'hidden',
+                transform: 'translateZ(0)',
+                willChange: 'transform'
+              }}
             />
           )}
         </div>
