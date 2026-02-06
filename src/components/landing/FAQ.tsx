@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "Can I sign in with my Google account?",
     answer:
-      "Absolutely! We support Google sign-in for quick and secure access. You can also sign up with your email!",
+      "Not yet! Google sign-in is coming soon. For now, please sign up with your email address.",
   },
   {
     question: "Can I use ChatSpace on my phone?",
