@@ -18,7 +18,6 @@ function LandingPage(){
             <FAQ />
             <CTA />
             <LandingFooter />
-
         </div>
     )
 
