@@ -3,7 +3,7 @@
 import { StaticMacbook } from "../ui/StaticMacbook";
 import { Link } from "react-router";
 import Logo from "../../assets/images/logo-v1.svg";
-import PictureInMacBook from "../../assets/images/picture-inside-macbook.png"
+import PictureInMacBook from "../../assets/images/picture-inside-macbook.svg"
 
 function Hero() {
   return (
