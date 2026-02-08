@@ -7,7 +7,7 @@ ChatSpace allows users to authenticate, join public chat rooms, create their own
 ---
 
 ## 🚀 Live Demo
-🔗 **Coming soon** (or add your deployed link here)
+🔗 **Coming soon**
 
 ---
 
