@@ -3,7 +3,19 @@
 import { StaticMacbook } from "../ui/StaticMacbook";
 import { Link } from "react-router";
 import Logo from "../../assets/images/logo-v1.svg";
-import PictureInMacBook from "../../assets/images/picture-inside-macbook.svg"
+import PictureInMacBook from "../../assets/images/picture-inside-macbook.svg";
+
+// For scroll animations
+import { motion } from "motion/react";
+import { type Easing } from "motion/react";
+
+// Animation for the MacBook
+const fadeInUp = {
+  initial: { opacity: 0, y: 60 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.3 },
+  transition: { duration: 1.5, ease: "easeOut" as Easing },
+};
 
 function Hero() {
   return (
@@ -19,9 +31,16 @@ function Hero() {
         md:px-8
         lg:px-16
       "
+      style={{
+        background:
+          "radial-gradient(ellipse 120% 50% at top center, oklch(0.715 0.143 215.221 / 0.12) 0%, transparent 60%)",
+      }}
     >
       {/* layout for mobile and tablet */}
-      <div className="flex flex-col gap-6 justify-center items-center lg:hidden">
+      <motion.div
+        {...fadeInUp}
+        className="flex flex-col gap-6 justify-center items-center lg:hidden"
+      >
         <div>
           <img className="w-20 h-20" src={Logo} alt="chatspace logo" />
         </div>
@@ -45,10 +64,12 @@ function Hero() {
             View Features
           </a>
         </div>
-      </div>
+      </motion.div>
 
       {/* Layout for desktop */}
-      <div className="hidden lg:block w-full overflow-hidden">
+      <motion.div
+      {...fadeInUp}
+      className="hidden lg:block w-full overflow-hidden">
         <div className="flex flex-col items-center gap-6 my-16">
           <h1 className="text-h1 lg:text-5xl xl:text-5xl max-w-2xl font-bold leading-tight">
             Chat in Real-Time, Connect Instantly
@@ -71,15 +92,12 @@ function Hero() {
             </a>
           </div>
         </div>
-        <StaticMacbook
-          src={PictureInMacBook}
-          showGradient={true}
-        />
+        <StaticMacbook src={PictureInMacBook} showGradient={true} />
         {/* <MacbookScroll
     src="https://images.unsplash.com/photo-1631888718423-082c9f5b0206?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     showGradient={true}
   /> */}
-      </div>
+      </motion.div>
     </section>
   );
 }

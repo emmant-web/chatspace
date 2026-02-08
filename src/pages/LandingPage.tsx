@@ -12,19 +12,18 @@ import { motion } from "motion/react";
 import { type Easing } from "motion/react";
 
 // Animation variants
-
-const slideInLeft = {
-  initial: { opacity: 0, x: -60 },
-  whileInView: { opacity: 1, x: 0 },
-  viewport: { once: true, amount: 0.4 },
-  transition: { duration: 1 },
-};
-
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, amount: 0.3 },
   transition: { duration: 1.5, ease: "easeOut" as Easing },
+};
+
+const slideInLeft = {
+  initial: { opacity: 0, x: -60 },
+  whileInView: { opacity: 1, x: 0 },
+  viewport: { once: true, amount: 0.4 },
+  transition: { duration: 1, ease: "easeOut" as Easing },
 };
 
 const scaleIn = {
@@ -39,9 +38,7 @@ function LandingPage() {
     <div>
       <LandingNavbar />
 
-      <motion.div {...fadeInUp}>
-        <Hero />
-      </motion.div>
+      <Hero />
 
       <motion.div {...slideInLeft}>
         <About />
