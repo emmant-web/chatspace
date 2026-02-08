@@ -13,34 +13,25 @@ import { type Easing } from "motion/react";
 
 // Animation variants
 
-const fadeIn = {
-  initial: { opacity: 0 },
-  whileInView: { opacity: 1 },
-  viewport: { once: true },
-  transition: { duration: 0.8 },
-};
-
-
-
 const slideInLeft = {
   initial: { opacity: 0, x: -60 },
   whileInView: { opacity: 1, x: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7 },
+  viewport: { once: true, amount: 0.4 },
+  transition: { duration: 1 },
 };
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, amount: 0.3 },
-  transition: { duration: 0.9, ease: "easeOut" as Easing },
+  transition: { duration: 1.5, ease: "easeOut" as Easing },
 };
 
 const scaleIn = {
   initial: { opacity: 0, scale: 0.8 },
   whileInView: { opacity: 1, scale: 1 },
-  viewport: { once: true },
-  transition: { duration: 0.6 },
+  viewport: { once: true, amount: 0.3 },
+  transition: { duration: 0.8 },
 };
 
 function LandingPage() {
@@ -56,9 +47,8 @@ function LandingPage() {
         <About />
       </motion.div>
 
-    
-        <Features />
-    
+      <Features />
+
       <motion.div {...fadeInUp}>
         <FAQ />
       </motion.div>
