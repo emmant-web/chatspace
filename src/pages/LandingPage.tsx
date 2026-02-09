@@ -19,9 +19,9 @@ const fadeInUp = {
   transition: { duration: 1.5, ease: "easeOut" as Easing },
 };
 
-const slideInLeft = {
-  initial: { opacity: 0, x: -60 },
-  whileInView: { opacity: 1, x: 0 },
+const fadeInUpTwo = {
+  initial: { opacity: 0, y: 40 },
+  whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, amount: 0.4 },
   transition: { duration: 1, ease: "easeOut" as Easing },
 };
@@ -40,7 +40,7 @@ function LandingPage() {
 
       <Hero />
 
-      <motion.div {...slideInLeft}>
+      <motion.div {...fadeInUpTwo}>
         <About />
       </motion.div>
 
