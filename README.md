@@ -11,9 +11,10 @@ ChatSpace allows users to authenticate, join public chat rooms, create their own
 ---
 
 ## 🚀 Live Demo
-<a href="https://chatspace-six.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Site-06B6D4?style=for-the-badge" alt="Live Demo"/>
+<a href="https://chatspace-six.vercel.app/" rel="noopener noreferrer">
+<img src="https://img.shields.io/badge/Live%20Demo-Visit%20Site-06B6D4?style=for-the-badge" alt="Live Demo"/>
 </a>
+
 
 ---
 
