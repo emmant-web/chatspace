@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="about"
-      className="relative py-24 px-4 sm:px-6 lg:px-8 bg-background overflow-hidden"
+      className="relative py-24 px-4 sm:px-6 lg:px-8 bg-background"
     >
       {/* Decorative background elements */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
