@@ -41,9 +41,9 @@ function FeatureCard({
       </div>
 
       {/* Image Section */}
-      <div className="relative h-64 bg-muted/30 overflow-hidden shrink-0">
+      <div className="relative h-64 bg-background overflow-hidden shrink-0 flex items-center justify-center">
         <img 
-          className="w-full h-full object-cover" 
+          className="w-full h-full object-contain" 
           src={image} 
           alt={altdesc} 
         />
