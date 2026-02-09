@@ -1,8 +1,12 @@
-# 💬 ChatSpace – Real-Time Chat Application
+<div align="center">
+  <img src="./public/read-me-imgs/logo-v1.svg" alt="ChatSpace Logo" width="100"/>
+  
+  # 💬 ChatSpace – Real-Time Chat Application
+</div>
 
 A modern real-time chat application built as a **portfolio project** to demonstrate front-end engineering skills, real-time data handling, and clean UI/UX practices.
 
-ChatSpace allows users to authenticate, join public chat rooms, create their own rooms, and communicate instantly using Supabase’s real-time features.
+ChatSpace allows users to authenticate, join public chat rooms, create their own rooms, and communicate instantly using Supabase's real-time features.
 
 ---
 
