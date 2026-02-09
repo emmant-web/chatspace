@@ -106,7 +106,7 @@ function About() {
         </div>
 
         
-        <div className="bg-linear-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 md:p-12 border border-primary/20">
+        <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 md:p-12 border border-primary/20">
           <div className="text-center max-w-3xl mx-auto">
             <h3 className="text-h3 text-foreground mb-4">
               Built for Performance
